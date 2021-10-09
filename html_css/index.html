@@ -36,42 +36,54 @@
             <option value="わくわくプラン">わくわくプラン</option>
         </select>
 
-        <form>
-            名前　　　：
-            <input type="text" placeholder="名字　名前">
-            <input type="radio" name="gender" value="男">男
-            <input type="radio" name="gender" value="女" checked>女
-        </form>
+        <form action="example.php" method="POST" name="contact-form">
+            <div>
+                名前　　　：
+                <input type="text" placeholder="名字　名前">
+                <input type="radio" name="gender" value="男" id="gender1">
+                <label for="gender1">男</label>
+                <input type="radio" name="gender" value="女" id="gender2" checked>
+                <label for="gender2">女</label>
+            </div>
 
-        <form>
-            血液型　　：
-            <select name="blood type">
-                <option value="ねこ型">ねこ型</option>
-                <option value="A型">A型</option>
-                <option value="B型">B型</option>
-                <option value="O型">O型</option>
-                <option value="AB型">AB型</option>
-            </select>
-        </form>
+            <div>
+                血液型　　：
+                <select name="blood type">
+                    <option value="ねこ型">ねこ型</option>
+                    <option value="A型">A型</option>
+                    <option value="B型">B型</option>
+                    <option value="O型">O型</option>
+                    <option value="AB型">AB型</option>
+                </select>
+            </div>
 
-        </form>
-            得意な言語：
-            <input type="checkbox" name="langs" value="Java">Java
-            <input type="checkbox" name="langs" value="Javascript">Javascript
-            <input type="checkbox" name="langs" value="Python">Python
-            <input type="checkbox" name="langs" value="C">C
-            <input type="checkbox" name="langs" value="Ruby">Ruby
-            <input type="checkbox" name="langs" value="PHP">PHP
-            <input type="checkbox" name="langs" value="Go">Go
-        </form>
+            </div>
+                得意な言語：
+                <input type="checkbox" name="langs" value="Java" id="Java">
+                <label for="Java">Java</label>
+                <label for=""></label>
+                <input type="checkbox" name="langs" value="Javascript" id="Javascript">
+                <label for="Javascript">Javascript</label>
+                <input type="checkbox" name="langs" value="Python" id="Python">
+                <label for="Python">Python</label>
+                <input type="checkbox" name="langs" value="C" id="C">
+                <label for="C">C</label>
+                <input type="checkbox" name="langs" value="Ruby" id="Ruby">
+                <label for="Ruby">Ruby</label>
+                <input type="checkbox" name="langs" value="PHP" id="PHP">
+                <label for="PHP">PHP</label>
+                <input type="checkbox" name="langs" value="Go" id="Go">
+                <label for="Go">Go</label>
+            </div>
 
-        <p>コメント</p>
-        <form>
-            <textarea name="message"></textarea>
-        </form>
+            <p>コメント</p>
+            <div>
+                <textarea name="message"></textarea>
+            </div>
 
-        <form>
-            <input type="submit" value="申し込む">
+            <div>
+                <input type="submit" value="申し込む">
+            </div>
         </form>
 
         <a href="guidelines.html">ガイドライン</a>
